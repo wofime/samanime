@@ -1,0 +1,114 @@
+/* Global settings */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e2f;
+    color: #f4f4f9;
+}
+
+/* Header */
+h1 {
+    background: linear-gradient(90deg, #ff7f50, #ff6347);
+    color: white;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    letter-spacing: 2px;
+    border-bottom: 3px solid #ff4500;
+}
+
+/* Manga List */
+.manga-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.manga-item {
+    background: #252539;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.manga-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7);
+}
+
+.manga-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 2px solid #ff6347;
+}
+
+.manga-item h2 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+    color: #ff7f50;
+    text-transform: uppercase;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #ff7f50;
+}
+
+a:hover {
+    color: #ff4500;
+}
+
+/* Individual Page */
+img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+p {
+    font-size: 1.1rem;
+    margin: 10px 20px;
+    color: #ddd;
+}
+
+a[href="../site.html"] {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ff6347;
+    color: white;
+    border-radius: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+}
+
+a[href="../site.html"]:hover {
+    background: #ff4500;
+    transform: scale(1.1);
+}
+
+/* Footer (optional) */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #252539;
+    color: #aaa;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    border-top: 2px solid #ff6347;
+}
